@@ -18,6 +18,7 @@ export const authConfig = {
       return true;
     },
   },
+  secret: "XgVvNltpqdGqFDa1kb0vAvkfFrjMQoDBAcb/XwqtalQ=",
   trustHost: true,
   providers: [], // Add providers with an empty array for now
 } satisfies NextAuthConfig;
