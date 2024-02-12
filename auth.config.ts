@@ -4,6 +4,7 @@ export const authConfig = {
   pages: {
     signIn: '/login',
   },
+  
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
@@ -17,5 +18,6 @@ export const authConfig = {
       return true;
     },
   },
+  trustHost: true,
   providers: [], // Add providers with an empty array for now
 } satisfies NextAuthConfig;
